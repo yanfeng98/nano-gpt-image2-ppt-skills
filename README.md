@@ -4,15 +4,10 @@
 
 **用 OpenAI `gpt-image-2` 一键生成视觉强烈的 PPT。**
 
-Claude Code / Codex / OpenClaw Skill。装进 agent 后，用一句自然语言生成 16:9 高清图片 + 可键盘翻页的 HTML viewer + 打包好的 `.pptx`，也可以仿任意 `.pptx` 模板出全新内容。
+装进 Claude Code 后，用一句自然语言生成 16:9 高清图片 + 可键盘翻页的 HTML viewer + 打包好的 `.pptx`，也可以仿任意 `.pptx` 模板出全新内容。
 
-[![GitHub stars](https://img.shields.io/github/stars/JuneYaooo/gpt-image2-ppt-skills?style=flat)](https://github.com/JuneYaooo/gpt-image2-ppt-skills/stargazers)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-orange.svg)](https://www.anthropic.com/claude-code)
 [![gpt-image-2](https://img.shields.io/badge/OpenAI-gpt--image--2-black.svg)](https://platform.openai.com/docs/guides/images)
-
-🌐 **English** → [docs/README.en.md](./docs/README.en.md)
 
 </div>
 
@@ -71,7 +66,7 @@ Claude Code / Codex / OpenClaw Skill。装进 agent 后，用一句自然语言�
 
 ### 方式一：让 AI 自己装（推荐）
 
-把下面这段 prompt 丢给你的 AI 助手（Claude Code / OpenClaw / Codex / Cursor / Trae / Hermes Agent 都行），它会自动完成安装：
+把下面这段 prompt 丢给你的 AI 助手（Claude Code / Codex 都行），它会自动完成安装：
 
 ```
 帮我安装 gpt-image2-ppt-skills：
@@ -145,30 +140,3 @@ VISION_MODEL_NAME=gemini-3.1-pro-preview   # 或 gpt-4o / claude-3.5-sonnet 等�
 Claude 会自己写 `slides_plan`、先出一页封面让你确认、再跑全量，把 HTML viewer + `.pptx` 路径告诉你。
 
 > 🧑‍💻 想自己写脚本调 CLI 而不走 agent？看 [`SKILL.md`](./SKILL.md)，CLI 参数、文件布局都在那。
-
----
-
-## 🙏 致谢
-
-- [op7418/NanoBanana-PPT-Skills](https://github.com/op7418/NanoBanana-PPT-Skills) — 风格 prompts 与 viewer 模板的原始作者。本项目把图片后端从 Nano Banana Pro 换成了 OpenAI gpt-image-2，重写了继承自上游的 3 套风格并新增 7 套（共 10 套），另加入模板克隆模式（vision 抽风格仿任意 `.pptx`）、md-first 编排流程、`.pptx` 自动打包、codex CLI 备用后端等新功能。
-- [lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) — Claude Code skill SKILL.md frontmatter 写法参考。
-
-## 💬 Community
-
-[**LINUX DO — 中文开发者社区**](https://linux.do/)
-
-### 微信交流群
-
-欢迎大家有问题一起交流讨论。
-
-<img src="docs/assets/wechat.jpg" width="300" alt="微信交流群">
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=JuneYaooo/gpt-image2-ppt-skills&type=Date)](https://star-history.com/#JuneYaooo/gpt-image2-ppt-skills&Date)
-
----
-
-## License
-
-Apache License 2.0，详见 [LICENSE](./LICENSE)。
